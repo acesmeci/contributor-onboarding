@@ -8,6 +8,8 @@ def multiply(a: float, b: float) -> float:
     Returns:
     float: The product of a and b.
     '''
+    a = float(a)
+    b = float(b)
     return a * b
 
 def divide(a: float, b: float) -> float:
