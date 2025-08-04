@@ -17,7 +17,7 @@ def sum(a: int, b: int) -> int:
     '''
     return a + b
 
-def multiply(a, b) -> float:
+def multiply(a: float, b: float) -> float:
     '''
     This function returns the product of two numbers
 
@@ -28,7 +28,13 @@ def multiply(a, b) -> float:
     Returns:
     float
     '''
+    # Ensure inputs are converted to float
+    a = float(a)
+    b = float(b)
     return a * b
+
+#Expected behavior: Returns the float product of two numbers.
+#Actual behavior: Now properly handles type conversion and returns float.
 
 def divide(a: float, b: float) -> float:
     '''
