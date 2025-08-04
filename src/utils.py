@@ -32,15 +32,19 @@ def multiply(a, b) -> float:
 
 def divide(a: float, b: float) -> float:
     '''
-    ...
 
     Args:
-    a: float the number to be divided
-    b: float the divisor
+    a (float): The numerator.
+    b (float): The denominator.
 
     Returns:
-    float
+    float: The result of a divided by b.
+
+    Raises:
+    ValueError: If b is zero.
     '''
+    if b == 0:
+        raise ValueError("Cannot divide by zero.")
     return a / b
 
 def modulo(a: int, b: int):
