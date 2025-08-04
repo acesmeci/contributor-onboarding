@@ -1,5 +1,3 @@
-# Hello World!
-
 # Basic Tutorial for Open Source Development on GitHub
 
 ## Requirements
